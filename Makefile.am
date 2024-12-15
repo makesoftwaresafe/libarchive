@@ -411,6 +411,7 @@ libarchive_test_SOURCES= \
 	libarchive/test/test_compat_bzip2.c \
 	libarchive/test/test_compat_cpio.c \
 	libarchive/test/test_compat_gtar.c \
+	libarchive/test/test_compat_gtar_large.c \
 	libarchive/test/test_compat_gzip.c \
 	libarchive/test/test_compat_lz4.c \
 	libarchive/test/test_compat_lzip.c \
@@ -806,6 +807,7 @@ libarchive_test_EXTRA_DIST=\
 	libarchive/test/test_read_format_7zip_lzma2.7z.uu \
 	libarchive/test/test_read_format_7zip_lzma2_arm64.7z.uu \
 	libarchive/test/test_read_format_7zip_lzma2_arm.7z.uu \
+	libarchive/test/test_read_format_7zip_lzma2_riscv.7z.uu \
 	libarchive/test/test_read_format_7zip_lzma2_sparc.7z.uu \
 	libarchive/test/test_read_format_7zip_malformed.7z.uu \
 	libarchive/test/test_read_format_7zip_malformed2.7z.uu \
@@ -1498,6 +1500,7 @@ bsdunzip_SOURCES= \
 		unzip/bsdunzip_platform.h \
 		unzip/cmdline.c \
 		unzip/la_getline.c \
+		unzip/la_getline.h \
 		unzip/la_queue.h
 
 if INC_WINDOWS_FILES
